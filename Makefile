@@ -1,4 +1,4 @@
-ABC.exe:main.o big2.o fact.o rev.o pal.o big3.o fib.o sort.o
+ABC.exe:main.o big2.o fact.o rev.o pal.o big3.o fib.o sort.o 
 	gcc -o ABC.exe main.o big2.o fact.o rev.o pal.o big3.o fib.o sort.o
 main.o:main.c
 	gcc -c main.c
@@ -16,5 +16,5 @@ fib.o:fib.c
 	gcc -c fib.c
 sort.o:sort.c
 	gcc -c sort.c
-       
+
 

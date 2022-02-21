@@ -1,36 +1,23 @@
 #include <stdio.h>
-    void sorting()
-    {
- 
-        int i, j, a, n, number[30];
-        printf("Enter the value of N \n");
-        scanf("%d", &n);
- 
-        printf("Enter the numbers \n");
-        for (i = 0; i < n; ++i)
-            scanf("%d", &number[i]);
- 
-        for (i = 0; i < n; ++i) 
-        {
- 
-            for (j = i + 1; j < n; ++j)
-            {
- 
-                if (number[i] > number[j]) 
-                {
- 
-                    a =  number[i];
-                    number[i] = number[j];
-                    number[j] = a;
- 
-                }
- 
-            }
- 
-        }
- 
-        printf("The numbers arranged in ascending order are given below \n");
-        for (i = 0; i < n; ++i)
-            printf("%d\n", number[i]);
- 
-    }
+void sorting(){
+   int num[20];
+   int i, j, a, n;
+   printf("\n enter number of elements in an array");
+   scanf("%d", &n);
+   printf("Enter the elements\n");
+   for (i = 0; i < n; ++i)
+      scanf("%d", &num[i]);
+   for (i = 0; i < n; ++i){
+      for (j = i + 1; j < n; ++j){
+         if (num[i] > num[j]){
+            a = num[i];
+            num[i] = num[j];
+            num[j] = a;
+         }
+      }
+   }
+   printf("The numbers in ascending order is:\n");
+   for (i = 0; i < n; ++i){
+      printf("%d\n", num[i]);
+   }
+}
